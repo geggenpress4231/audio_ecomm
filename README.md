@@ -1,59 +1,66 @@
-This repository contains the source code for an Enterprise Application Modeling project, focusing on a microservices architecture. The project is structured into three main services: Product Service, Order Service, and Image Service. Additionally, it incorporates a Eureka Service for service discovery.
+Enterprise Application Modeling Project
+Overview
+This repository contains the source code for an Enterprise Application Modeling project. This project utilizes a microservices architecture, incorporating services such as Product Service, Order Service, Image Service, and a Eureka Service for service discovery.
 
 Services Description
-Product Service: Manages product data including ID, product name, description, price, image ID, and stock level.
-Order Service: Handles customer orders, storing customer ID, order date, total amount, and product details.
-Image Service: Responsible for managing images related to products, essential for the product catalog.
+Product Service: Manages data related to products, including ID, name, description, price, image ID, and stock levels.
+Order Service: Manages customer orders, capturing details such as customer ID, order date, total amount, and specific product details.
+Image Service: Manages images that are associated with products, crucial for the product catalog.
+Eureka Service: Handles service registration and discovery, facilitating the interaction between the microservices.
 Technologies Used
-Java with Spring Boot
-Spring Cloud Netflix Eureka
-MySQL (for database)
-Docker
-Git (for version control)
+Java with Spring Boot: Framework for creating the microservices.
+Spring Cloud Netflix Eureka: Used for service discovery.
+MySQL: Database for storing service data.
+Docker: Containerization of services.
+Git: Version control system used for source code management.
 Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will guide you to set up and run the project on your local machine for development and testing purposes.
 
 Prerequisites
-What things you need to install the software and how to install them:
+Ensure you have the following installed:
 
-Java JDK 11 or later
-Maven
-Docker
-MySQL
-Installing
-A step by step series of examples that tell you how to get a development environment running.
+Java JDK 11 or later: Download JDK
+Maven: Installing Maven
+Docker: Get Docker
+MySQL: Install MySQL
+Installation Steps
+Clone the Repository
 
-Clone the repository
 bash
 Copy code
 git clone https://yourrepositorylink.git
-Navigate to each service directory and build the Docker images
+Build Docker Images
+Navigate to each service directory and build the Docker images:
+
 bash
 Copy code
 cd ProductService
 docker build -t product-service .
-bash
-Copy code
+
 cd OrderService
 docker build -t order-service .
-bash
-Copy code
+
 cd ImageService
 docker build -t image-service .
-bash
-Copy code
+
 cd EurekaService
 docker build -t eureka-service .
-Run the Docker containers
+Run Docker Containers
+
 bash
 Copy code
 docker run -p 8080:8080 product-service
 docker run -p 8081:8081 order-service
 docker run -p 8082:8082 image-service
 docker run -p 8761:8761 eureka-service
-Configuring MySQL
-Ensure your MySQL instance is set up and running with the necessary databases and user permissions.
+Configure MySQL
+Ensure your MySQL instance is properly set up with the necessary databases and user permissions for each service.
 
 Contributions
-Param Sureshbhai Gandhi: Focused on setting up the Eureka service and Docker configurations, including building and managing Docker images.
-Utsa Rabbani: Worked on developing the Product and Order services, including their respective databases, APIs, and Docker configurations.
+Param Sureshbhai Gandhi: Led the setup of the Eureka Service and Docker configurations, including managing Docker image creation and deployment.
+Utsa Rabbani: Developed the Product and Order Services, focusing on database integration, API development, and Docker containerization.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgments
+Special thanks to everyone who contributed to the project.
