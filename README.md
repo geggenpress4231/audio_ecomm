@@ -31,10 +31,11 @@ Ensure you have the following installed:
    git clone https://github.com/geggenpress4231/audio_ecomm.git
 
 
-   ## Build Docker Images
+Build Docker Images
 Navigate to each service directory and build the Docker images:
 
-```bash
+bash
+Copy code
 cd ProductService
 docker build -t product-service .
 cd ../OrderService
@@ -43,26 +44,15 @@ cd ../ImageService
 docker build -t image-service .
 cd ../EurekaService
 docker build -t eureka-service .
-
-## Run Docker Containers
-
+Run Docker Containers
 To run the Docker containers for each service, execute the following commands:
 
-```bash
-# Run the Product Service
+bash
+Copy code
 docker run -p 8080:8080 product-service
-
-# Run the Order Service
 docker run -p 8081:8081 order-service
-
-# Run the Image Service
 docker run -p 8082:8082 image-service
-
-# Run the Eureka Service
 docker run -p 8761:8761 eureka-service
-
-
-##Contributions
+Contributions
 Param Sureshbhai Gandhi: Led the setup of the Eureka Service and Docker configurations, including managing Docker image creation and deployment.
-Utsa Rabbani: Developed the Product and Order Services, focusing on database integration, API development, and Docker containerization.
-
+Utsa Rabbani: Developed the Product and Order Services, focusing on database integration, API development, and Docker containerization
