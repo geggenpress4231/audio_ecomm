@@ -1,4 +1,4 @@
-his repository contains the source code for an Enterprise Application Modeling project, focusing on a microservices architecture. The project is structured into three main services: Product Service, Order Service, and Image Service. Additionally, it incorporates a Eureka Service for service discovery.
+This repository contains the source code for an Enterprise Application Modeling project, focusing on a microservices architecture. The project is structured into three main services: Product Service, Order Service, and Image Service. Additionally, it incorporates a Eureka Service for service discovery.
 
 Services Description
 Product Service: Manages product data including ID, product name, description, price, image ID, and stock level.
