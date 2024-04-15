@@ -62,7 +62,7 @@ docker run -p 8082:8082 image-service
 docker run -p 8761:8761 eureka-service
 
 
-Contributions
+##Contributions
 Param Sureshbhai Gandhi: Led the setup of the Eureka Service and Docker configurations, including managing Docker image creation and deployment.
 Utsa Rabbani: Developed the Product and Order Services, focusing on database integration, API development, and Docker containerization.
 
