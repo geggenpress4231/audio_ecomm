@@ -34,13 +34,13 @@ public class Product {
     public Product() {
     }
 
-    public Product(String name, String description, Double price, String imageId, Integer stock) {
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.imageId = imageId;
-        this.stock = stock;
-    }
+//    public Product(String name, String description, Double price, String imageId, Integer stock) {
+//        this.name = name;
+//        this.description = description;
+//        this.price = price;
+//        this.imageId = imageId;
+//        this.stock = stock;
+//    }
 
     // Getters and Setters
     public Long getId() {

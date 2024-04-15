@@ -1,7 +1,6 @@
 package com.example.demo;
 
-import com.example.demo.Product;
-import com.example.demo.ProductRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,13 +9,19 @@ import java.util.Optional;
 
 @Service
 public class ProductService {
+	@Autowired
+	private ProductRepository productRepository;
 
-    private final ProductRepository productRepository;
-
-    @Autowired
-    public ProductService(ProductRepository productRepository) {
-        this.productRepository = productRepository;
-    }
+    
+//    public ProductService(ProductRepository productRepository) {
+//        this.productRepository = productRepository;
+//  }
+//    @Bean(name="entityManagerFactory")
+//    public LocalSessionFactoryBean sessionFactory() {
+//        LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
+//
+//        return sessionFactory;
+//    } 
 
     public Product saveProduct(Product product) {
         return productRepository.save(product);
