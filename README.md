@@ -29,3 +29,18 @@ Ensure you have the following installed:
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/geggenpress4231/audio_ecomm.git
+
+
+   ## Build Docker Images
+Navigate to each service directory and build the Docker images:
+
+```bash
+cd ProductService
+docker build -t product-service .
+cd ../OrderService
+docker build -t order-service .
+cd ../ImageService
+docker build -t image-service .
+cd ../EurekaService
+docker build -t eureka-service .
+
