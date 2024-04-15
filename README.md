@@ -1,4 +1,4 @@
-Enterprise Application Modeling Project
+Audio Ecommerce Modeling Project
 Overview
 This repository contains the source code for an Enterprise Application Modeling project. This project utilizes a microservices architecture, incorporating services such as Product Service, Order Service, Image Service, and a Eureka Service for service discovery.
 
